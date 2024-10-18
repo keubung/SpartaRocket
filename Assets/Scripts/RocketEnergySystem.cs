@@ -15,8 +15,11 @@ public class RocketEnergySystem : Rocket
 
     private void Update()
     {
-        currentFuel += 0.1f;
+        currentFuel += 0.01f;
         currentFuel = Mathf.Min(currentFuel, maxFuel);
+        currentFuel = Mathf.Round(currentFuel * 100) / 100;
+        fuelBar.fillAmount = currentFuel / maxFuel;
+        FuelTxt.text = $"Fuel : {currentFuel}";
     }
 
     public void Shoot()
@@ -24,11 +27,10 @@ public class RocketEnergySystem : Rocket
         if (currentFuel >= 10)
         {
             currentFuel -= FUELPERSHOOT;
-            currentFuel = Mathf.Round(currentFuel * 10) / 10;
-            fuelBar.fillAmount = currentFuel / maxFuel;
+            //fuelBar.fillAmount = currentFuel / maxFuel;
             _rb2d.gravityScale = -SPEED;
         }
-        FuelTxt.text = $"Fuel : {currentFuel}";
+        //FuelTxt.text = $"Fuel : {currentFuel}";
     }
 
     //public void Speed()

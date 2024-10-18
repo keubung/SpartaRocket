@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 742152133}
   - component: {fileID: 742152132}
   m_Layer: 5
-  m_Name: CurrentScoreText (TMP)
+  m_Name: CurrentScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 928469763}
   - component: {fileID: 928469762}
   m_Layer: 5
-  m_Name: HighScoreText (TMP)
+  m_Name: HighScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1778,7 +1778,7 @@ GameObject:
   - component: {fileID: 1238420462}
   - component: {fileID: 1238420461}
   m_Layer: 5
-  m_Name: FuelText (TMP)
+  m_Name: FuelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
